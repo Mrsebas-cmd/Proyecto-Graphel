@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contacto</title>
+</head>
+<body>
+
+    <!-- menu -->
+      <header>
+       <h1 class="titulo">
+        <span class="blanco">DISEÑO</span>
+        <span class="azul">Multimedia</span>
+       </h1>
+
+       <nav>
+        <!-- se requiere menu horizontalmente, y decoracion en none, tambien hay que colocar un borde abajo de color azul  -->
+        <!-- tambien se requiere que al pasar el mause por encima de inicio o demas se ponga en azul -->
+        <ul>
+            <li><a href="../index.html" >INICIO</a></li>
+            <li><a href="nosotros.html">NOSOTROS</a></li>
+            <li><a href="servicios.html">SERVICIOS</a></li>
+            <li><a href="contacto.html" class="activo">CONTACTO</a></li>
+
+        </ul>
+       </nav>
+    </header>
+    <!-- cuerpo -->
+    <main>
+    
+        <!-- suscripcion -->
+        <section class="suscripcion">
+            <h3>Suscribete a nuestro boletin</h3>
+
+            <form>
+                <input type="email" name="correo" placeholder="Ingrese el Email" required>
+                <button type="submit" class="btn">Suscribete</button>
+            </form>
+        </section>
+
+
+        <!-- formulario -->
+        <div class="contenido">
+            <!-- columna izquierda -->
+            <section class="contacto">
+
+                <h2>Contacto</h2>
+
+                <form class="formulario-contacto">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Ingresa tu email" required>
+
+                    <label for="telefono">Telefono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ingresa tu telefono">
+
+                    <label for="celular">Celular</label>
+                    <input type="tel" id="celular" name="celular" placeholder="Ingresa tu celular">
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" rows="6" required></textarea>
+
+                    <button type="submit" class="btn">Enviar</button>
+                </form>
+            </section>
+        
+        <!-- columna a la derecha -->
+            <!-- que hacemos  -->
+            <aside class="columna-derecha">
+                <div class="hacemos blanco">
+                    <h3>Que hacemos</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore reiciendis odio expedita suscipit earum repellat quod molestiae dolorum cumque facere voluptatem hic aut rem provident sequi soluta, eligendi quas quis?</p>
+                </div>
+
+                <img src="../assets/images/mapaGoogle.png"   class="mapa" alt="Mapa dde google">
+
+            </aside>
+        </div>
+    </main>
+
+    <!-- pie de pagina -->
+
+     <footer>
+        <p class="blanco">Graphel Desarrollo Web, Copyright  &copy; 2017</p>
+    </footer>
+</body>
+</html>
