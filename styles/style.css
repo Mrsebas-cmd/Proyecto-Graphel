@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilos body  */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background-color: #f2f2f2;
+}
+
+/* clases repetidas */
+
+.blanco {
+    color: white;
+}
+
+.azul {
+    color: #1293c5;
+}
+
+/* estilos header navegacion */
+
+/* Cabecera */
+
+header {
+    background-color: #24282b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10%;
+    border-bottom: 3px solid #1293c5;
+}
+
+/* tamañño de titulo */
+.titulo {
+    font-size: 25px;
+}
+
+/* estilos de menu de navegacion  */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+/* estilos de los enlaces */
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+/* efecto al pasar el mouse por los enlaces */
+
+nav a:hover {
+    color: #1293c5;
+}
+
+/* enlace de la pagina actual */
+
+nav a.activo {
+    color: #1293c5;
+    font-weight: bold;
+}
+
+/*ESTILOS DE SUSCRIPCION*/
+
+/* contenedor de suscripcion */
+
+.suscripcion {
+    background-color: #24282b;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+}
+
+/* titulo de suscripcion */
+
+.suscripcion h3 {
+    font-size: 22px;
+}
+
+/* formulario de suscripcion */
+
+.suscripcion form {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* campo de correo electronico */
+
+.suscripcion input {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+}
+
+/* estilos generales de los botones */
+
+.btn {
+    background-color: #e8491d;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    cursor: pointer;
+}
+
+/* efecto al pasar el mouse por el boton */
+
+.btn:hover {
+    background-color: #c93d16;
+}
+
+/*ESTILOS DE LA PAGINA INICIO*/
+
+/* imagen de fondo */
+
+.fondo {
+    background-image: url("../assets/images/cabecera.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 10%;
+}
+
+/* titulo principal de inicio */
+
+.fondo h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+/* parrafo de la imagen de fondo */
+
+.fondo p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* contenedor de las tres tarjetas */
+
+.tarjetas {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 30px 10%;
+}
+
+/* estilos individuales de las tarjetas */
+
+.tarjeta {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+/* imagenes de las tarjetas */
+
+.tarjeta img {
+    width: 90px;
+    margin-bottom: 15px;
+}
+
+/* titulos de las tarjetas */
+
+.tarjeta h3 {
+    margin-bottom: 15px;
+}
+
+/* parrafos de las tarjetas */
+
+.tarjeta p {
+    line-height: 1.5;
+}
+
+/* CONTENEDOR GENERAL DE COLUMNAS*/
+
+/* utilizado en nosotros, servicios y contacto */
+
+.contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    width: 80%;
+    margin: 25px auto;
+}
+
+/* ancho de las columnas izquierdas */
+
+.nosotros,
+.servicios,
+.contacto {
+    flex: 7;
+}
+
+/* ancho de las columnas derechas */
+
+.contenido>.hacemos,
+.columna-derecha {
+    flex: 3;
+}
+
+/* estilos de los titulos principales */
+
+.nosotros h2,
+.nosotros h3,
+.servicios h2,
+.contacto h2 {
+    margin-bottom: 20px;
+}
+
+/* estilos generales del recuadro que hacemos */
+
+.hacemos {
+    background-color: #35424a;
+    padding: 20px;
+}
+
+/* titulo del recuadro que hacemos */
+
+.hacemos h3 {
+    margin-bottom: 15px;
+}
+
+/* parrafo del recuadro que hacemos */
+
+.hacemos p {
+    line-height: 1.5;
+}
+
+/*ESTILOS DE LA PAGINA NOSOTROS*/
+
+/* parrafos de nosotros */
+
+.nosotros p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* parrafo con fondo gris oscuro */
+
+.parrafo {
+    background-color: #35424a;
+    padding: 20px;
+}
+
+/* imagen del portatil */
+
+.nosotros img {
+    width: 100%;
+    display: block;
+}
+
+/*ESTILOS DE LA PAGINA SERVICIOS */
+
+/* recuadros de cada servicio */
+
+.servicio {
+    background-color: #e6e6e6;
+    border: 1px solid #cccccc;
+    padding: 30px 20px;
+    margin-bottom: 5px;
+}
+
+/* titulos de los servicios */
+
+.servicio h3 {
+    margin-bottom: 20px;
+}
+
+/* parrafos de los servicios */
+
+.servicio p {
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* eliminar margen del ultimo parrafo */
+
+.servicio p:last-child {
+    margin-bottom: 0;
+}
+
+/* ESTILOS DE LA PAGINA CONTACTO*/
+
+/* organizar el formulario verticalmente */
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+/* etiquetas del formulario */
+
+.formulario-contacto label {
+    margin-bottom: 5px;
+}
+
+/* campos de texto y mensaje */
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    margin-bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+/* area de mensaje */
+
+.formulario-contacto textarea {
+    resize: vertical;
+}
+
+/* boton enviar */
+
+.formulario-contacto .btn {
+    width: 100%;
+    padding: 12px;
+}
+
+/* columna derecha de contacto */
+
+.columna-derecha {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* imagen del mapa */
+
+.columna-derecha img {
+    width: 100%;
+    display: block;
+}
+
+/*ESTILOS DEL PIE DE PAGINA*/
+
+footer {
+    background-color: #1293c5;
+    text-align: center;
+    padding: 25px;
+    margin-top: 20px;
+}
+
+/* mantener el footer en la parte inferior */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
